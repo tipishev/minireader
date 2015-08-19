@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<head>
+<script>
+window.Airbrake = [];
+window.Airbrake.try = function(fn) { try { fn() } catch(er) { window.Airbrake.push(er); } };
+</script>
+<script defer src="https://ssljscdn.airbrake.io/airbrake-js-tracekit.min.js"
+data-airbrake-project-id="107541"
+data-airbrake-project-key="4454a2519e33b0c038c381e1177df72e"
+data-airbrake-project-environment-name="production"></script>
+
+
+
+<title>Чиновник в США отказался извиняться за призыв к ядерному удару по мусульманам: Политика: Мир: Lenta.ru</title>
+<link href="http://lenta.ru/news/2015/08/19/sidmiller/" rel="canonical">
+<link rel="shortcut icon" type="image/x-icon" href="http://icdn.lenta.ru/favicon.ico" />
+<link rel="apple-touch-icon" type="image/png" href="http://icdn.lenta.ru/lenta_touch.png" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"66a8d51230","applicationID":"1241738","transactionName":"J19cQUoOWA0ERBoQXhRZUUYXElwOFg==","queueTime":0,"applicationTime":128,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUGU1VRGwICUFBVBAk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,u=c.document;t(2);var f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+<meta content="Глава департамента сельского хозяйства штата Техас Сид Миллер отказался извиняться за призыв сбросить ядерную бомбу на мусульман, который он опубликовал в Facebook. Скандальная запись появилась в выходные и к понедельнику была удалена. Представитель чиновника заявил, что его боссу не за что просить прощения." property="description">
+<meta content="summary" property="twitter:card">
+<meta content="@lentaruofficial" property="twitter:site">
+<meta content="228661749" property="twitter:site:id">
+<meta content="400999606634271" property="fb:app_id">
+<meta content="100001675821480" property="fb:admins">
+<meta content="article" property="og:type">
+<meta content="Чиновник в США отказался извиняться за призыв к ядерному удару по мусульманам" property="og:title">
+<meta content="http://lenta.ru/news/2015/08/19/sidmiller/" property="og:url">
+<meta content="http://icdn.lenta.ru/images/2015/08/19/16/20150819161216989/original_b26dad668e1cdc9db05ece9128fcd7aa.jpg" property="og:image">
+<meta content="Глава департамента сельского хозяйства штата Техас Сид Миллер отказался извиняться за призыв сбросить ядерную бомбу на мусульман, который он опубликовал в Facebook. Скандальная запись появилась в выходные и к понедельнику была удалена. Представитель чиновника заявил, что его боссу не за что просить прощения." property="og:description">
+<meta content="Глава департамента сельского хозяйства штата Техас Сид Миллер отказался извиняться за призыв сбросить ядерную бомбу на мусульман, который он опубликовал в Facebook. Скандальная запись появилась в выходные и к понедельнику была удалена. Представитель чиновника заявил, что его боссу не за что просить прощения." name="description">
+
+
+
+<link rel="stylesheet" media="all" href="http://icdn.lenta.ru/assets/lenta-71f63aea218336edcac2c97aac0decc1.css" />
+<link rel="stylesheet" media="all" href="http://icdn.lenta.ru/assets/topic-36f0998def99de805bcbd9d6e7116d74.css" />
+
+<script>
+  var crtg_nid = '3158';
+  var crtg_cookiename = 'crtg_rta';
+  var crtg_varname = 'crtg_content';
+  function crtg_getCookie(c_name){ var i,x,y,ARRCookies=document.cookie.split(";");for(i=0;i<ARRCookies.length;i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("="));y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y);} }return'';}
+  var crtg_content = crtg_getCookie(crtg_cookiename);
+  var crtg_rnd=Math.floor(Math.random()*99999999999);
+  (function(){
+    var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid);
+    crtg_url +='&cookieName='+escape(crtg_cookiename);
+    crtg_url +='&rnd='+crtg_rnd;
+    crtg_url +='&varName=' + escape(crtg_varname);
+    var crtg_script=document.createElement('script');crtg_script.type='text/javascript';crtg_script.src=crtg_url;crtg_script.async=true;
+    if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);
+    else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script);
+  })();
+</script>
+<script src="//montblanc.rambler.ru/static/js/montblanc.js" debug="false"></script>
+<script src="//lib.rl0.ru/adfox/7/adfox.custom.min.js" debug="false"></script>
+<script src="http://icdn.lenta.ru/assets/core-8fe26871a0ca0237b42ea05acebdf65a.js" debug="false"></script>
+<script src="//ad.rambler.ru/static/green2.min.js"></script>
+<script>
+  // Google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18447330-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+<script type="text/javascript">
+  Adf.init.criteo('3158');
+  Adf.init.begun();
+</script>
+<div class="g-application" id="root">
+<section class="b-banner-top-decorator js-advert">
+<div id="ban_billboard">
+  <script type="text/javascript">
+    var bannerName = 'ban_billboard'
+    var bannerFunctionName = 'show_b'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'brynh',
+      p2: 'y',
+      pct: 'c',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '410692428',
+      'begun-auto-pad': '390745432'
+    };
+    var cssClasses = " ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div>
+</section>
+
+<nav class="b-sidebar-menu">
+<div class="mini" id="menu-toggler">
+<div class="toggler icons-sprite icons-menu_toggler"></div>
+</div>
+<div class="origin b-menu-decorator" id="sidebar-menu">
+<div class="b-sidebar-menu__wrap">
+<ul>
+<li class="special"><a style="color: #ffffff" href="/">Главное</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/russia/">Россия</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/world/">Мир</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/ussr/">Бывший СССР</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/economics/">Финансы</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/business/">Бизнес</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/forces/">Силовые структуры</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/science/">Наука и техника</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/sport/">Спорт</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/culture/">Культура</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/media/">Интернет и СМИ</a></li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/life/">Из жизни</a></li>
+<li class="delimiter">
+<div></div>
+</li>
+<li class="special"><a style="color: #ffffff" href="/rubrics/library/">Библиотека</a></li>
+<li class="delimiter">
+<div></div>
+</li>
+<li><a target="_blank" style="color: #959595" href="http://motor.ru/">Мотор</a></li>
+<li><a target="_blank" style="color: #959595" href="http://dom.lenta.ru/">Дом</a></li>
+<li class="delimiter">
+<div></div>
+</li>
+<li><a style="color: #959595" href="/parts/text/">Статьи</a></li>
+<li><a style="color: #959595" href="/parts/photo/">Галереи</a></li>
+<li><a style="color: #959595" href="/parts/infographics/">Инфографика</a></li>
+<li><a style="color: #959595" href="/specprojects/">Спецпроекты</a></li>
+</ul>
+<div class="b-sidebar-menu__fuck icons-sprite icons-fuck"></div>
+<div class="b-sidebar-menu__under-fuck icons-sprite icons-under_fuck"></div>
+<form action="/search" class="search" method="GET">
+<input name="query" placeholder="Поиск" type="text">
+<i class="icons-sprite icons-search" onclick="$(this).closest('form').submit()"></i>
+</form>
+</div>
+</div>
+</nav>
+
+<div class="b-up icons-sprite icons-up" id="up" title="наверх"></div>
+<section class="b-header-inner">
+<div class="g-layout">
+<div class="b-header-inner__wrap">
+<a class="b-header-inner__logo icons-sprite icons-lenta_small" href="/"></a>
+<div class="b-header-inner__info">
+<a class="b-header-inner__block" href="/rubrics/world/">Мир</a>
+<div class="date" id="date-time">&nbsp;</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<nav class="b-tags-list js-tags">
+<div class="g-layout">
+<div class="row">
+<div class="span11">
+<div class="items">
+<a class="item dark " href="/rubrics/world/">Все
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark active" href="/rubrics/world/politic/">Политика
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark " href="/rubrics/world/society/">Общество
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark " href="/rubrics/world/crime/">Преступность
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark " href="/rubrics/world/accident/">Происшествия
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark " href="/rubrics/world/catastrophe/">Катастрофы
+<div class="decorator icons-sprite icons-active"></div>
+</a><a class="item dark " href="/rubrics/world/conflict/">Конфликты
+<div class="decorator icons-sprite icons-active"></div>
+</a>&nbsp;
+</div>
+</div>
+<div class="span1 archive">
+<a class="js-calendar" href="/2015/08/19/">Архив</a>
+</div>
+</div>
+</div>
+</nav>
+
+
+
+<div class="b-topic-layout">
+<div class="g-layout">
+<div class="row">
+<div class="span8">
+<div class="b-topic b-topic_news" itemscope itemtype="http://schema.org/NewsArticle">
+<div class="b-topic__content">
+<div class="b-topic__header">
+<div class="b-topic__info">
+<time class="g-date" datetime="2015-08-19T13:28:00Z" itemprop="datePublished" pubdate> 16:28, 19 августа 2015</time>
+
+</div>
+<h1 class="b-topic__title" itemprop="headline">Чиновник в&nbsp;США отказался извиняться за&nbsp;призыв к&nbsp;ядерному удару по&nbsp;мусульманам</h1>
+<div class="b-topic__title-image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+<img alt="Сид Миллер" class="g-picture" rel="image_src" itemprop="image" style="max-width: 420px; width: 420px; height: 280px;" src="http://icdn.lenta.ru/images/2015/08/19/16/20150819161216989/pic_c821c9c58a9e3e88f7ec274bf0764eea.jpg" width="420" height="280" />
+<div class="b-label">
+<div class="b-label__caption" itemprop="description">Сид Миллер</div>
+<div class="b-label__credits" itemprop="author"><div id="14399933707523384"></div><script type="text/javascript">$('#14399933707523384').html(decodeURIComponent('%d0%a4%d0%be%d1%82%d0%be%3a%20%45%72%69%63%20%47%61%79%20%2f%20%41%50'));</script></div>
+</div>
+</div>
+
+</div>
+<div class="b-text clearfix" itemprop="articleBody">
+<p>Глава департамента сельского хозяйства штата Техас Сид Миллер отказался извиняться за призыв сбросить ядерную бомбу на мусульман, который он опубликовал в Facebook. Об этом сообщает <a href="http://www.ap.org/" target="_blank" class="source">Associated Press</a>.</p>
+<p>Скандальная запись в аккаунте Миллера появилась в выходные. Она содержала картинку из закрытого сообщества The Patriot's IV Drip, опубликованную Миллером. На ней было изображено грибообразное облако от ядерного взрыва и надпись «Япония живет в мире с нами с 9 августа 1945 года (день бомбардировки Нагасаки — <i>прим. "Ленты.ру"</i>). Похоже, пора примириться с мусульманским миром». Запись провисела все выходные и была удалена в понедельник.</p>
+<p>Публикация картинки вызвала резкую критику со стороны политических оппонентов Миллера. Техасское отделение Демократической партии заявило: «Риторика, которую позволяет себе республиканец Сид Миллер, отвратительна и неприемлема. К сожалению, такие расистские и ксенофобские высказывания помогают республиканцам в их партийной карьере». Демократы также напомнили, что в Техасе проживает самое большое число мусульман в США — 422 тысячи, и потребовали от Миллера извинений.</p>
+<p>Представитель чиновника Тодд Смит, говоря от имени своего босса, в ответ подчеркнул, что критикам Миллера следует обратиться за извинениями к исламским террористам, Ирану и президенту Бараку Обаме. «Мы полагаем, что их деяния куда серьезнее и гораздо больше заслуживают просьб о прощении, чем наводящая на размышления запись в Facebook», — отметил Смит. Он также добавил, что сам Миллер картинку не расшаривал: к его аккаунту имеют доступ 18 человек, и выяснять, кто это сделал, Смит не намерен.</p>
+<p>Сид Миллер известен как убежденный республиканец. Официальный сайт департамента сельского хозяйства Техаса <a href="https://texasagriculture.gov/About/CommissionerMiller.aspx" target="_blank">характеризует</a> Миллера как «одного из самых динамичных и эффективных консервативных лидеров штата, а также одного из самых последовательных защитников конституционных свобод». Ранее чиновник неоднократно высказывался по вопросам внешней политики и национальной безопасности, критикуя социалистов и мусульман.</p>
+</div>
+
+</div>
+<section class="b-topic__socials"><div class="b-socials" id="socials">
+<div class="share_btns">
+<div class="share_btn share_fb">
+<div class="share_img icons-fb-gray icons-sprite">
+<div class="share_img_hower icons-fb-share icons-sprite"></div>
+</div>
+<div class="share_count"></div>
+<div class="svg-arrow icons-social-arrow icons-sprite">
+<svg version="1.1" width="25" height="20">
+  <polygon fill="#FFFFFF" points="7.5,13 0,7 7.5,0 10,0 10,13"/>
+  <polyline fill="#FFFFFF" stroke="#D5D5D5" stroke-miterlimit="10" points="7.5,13 0,7 7.5,0"></polyline>
+</svg>
+</div>
+</div>
+<div class="share_btn share_tw">
+<div class="share_img icons-tw-gray icons-sprite">
+<div class="share_img_hower icons-tw-share icons-sprite"></div>
+</div>
+<div class="share_count"></div>
+<div class="svg-arrow icons-social-arrow icons-sprite">
+<svg version="1.1" width="20" height="20">
+  <polygon fill="#FFFFFF" points="7.5,13 0,7 7.5,0 10,0 10,13"/>
+  <polyline fill="#FFFFFF" stroke="#D5D5D5" stroke-miterlimit="10" points="7.5,13 0,7 7.5,0"></polyline>
+</svg>
+</div>
+</div>
+<div class="share_btn share_vk">
+<div class="share_img icons-vk-gray icons-sprite">
+<div class="share_img_hower icons-vk-share icons-sprite"></div>
+</div>
+<div class="share_count"></div>
+<div class="svg-arrow icons-social-arrow icons-sprite">
+<svg version="1.1" width="20" height="20">
+  <polygon fill="#FFFFFF" points="7.5,13 0,7 7.5,0 10,0 10,13"/>
+  <polyline fill="#FFFFFF" stroke="#D5D5D5" stroke-miterlimit="10" points="7.5,13 0,7 7.5,0"></polyline>
+</svg>
+</div>
+</div>
+<div class="share_btn share_ok">
+<div class="share_img icons-ok-gray icons-sprite">
+<div class="share_img_hower icons-ok-share icons-sprite"></div>
+</div>
+<div class="share_count"></div>
+<div class="svg-arrow icons-social-arrow icons-sprite">
+<svg version="1.1" width="20" height="20">
+  <polygon fill="#FFFFFF" points="7.5,13 0,7 7.5,0 10,0 10,13"/>
+  <polyline fill="#FFFFFF" stroke="#D5D5D5" stroke-miterlimit="10" points="7.5,13 0,7 7.5,0"></polyline>
+</svg>
+</div>
+</div>
+<div class="share_btn share_lj">
+<div class="share_img icons-lj-gray icons-sprite">
+<div class="share_img_hower icons-lj-share icons-sprite"></div>
+</div>
+</div>
+</div>
+<a class="button button_theme_dark" onclick="ga(&#39;send&#39;, {&#39;hitType&#39;: &#39;event&#39;, &#39;eventCategory&#39;: &#39;button&#39;, &#39;eventAction&#39;: &#39;socialblock&#39;, &#39;eventValue&#39;: 3});" href="/subscriptions/new/"><span class="button__text">
+подписаться
+<span class="button__icon icons-sprite icons-email_white"></span>
+</span>
+</a><a class="comments" href="/comments/news/2015/08/19/sidmiller/">Обсудить
+<span data-xid="http://lenta.ru/news/2015/08/19/sidmiller/" id="comments-count">&nbsp;</span>
+</a><script>
+  _hcwp = window._hcwp || [];
+  _hcwp.push({widget:"Bloggerstream", widget_id: 5270, selector : '#comments-count', label : ' ({%COUNT%})'});
+  (function() {
+  if("HC_LOAD_INIT" in window)return;
+  HC_LOAD_INIT = true;
+  var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage ||  "en").substr(0, 2).toLowerCase();
+  var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+  hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/5270/"+lang+"/widget.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hcc, s.nextSibling);
+  })();
+</script>
+</div>
+</section>
+<div class="b-banner-superfooter"><div id="ban_100x240">
+  <script type="text/javascript">
+    var bannerName = 'ban_100x240'
+    var bannerFunctionName = 'showScroll_b'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'brzai',
+      p2: 'fcuz',
+      pct: 'a',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '410692590',
+      'begun-auto-pad': '390745432'
+    };
+    var cssClasses = "b-banner-superfooter__adv ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></div>
+
+<section class="b-topic-addition b-links">
+<div class="bordered-title">Ссылки по теме</div>
+<div class="item">
+<div class="title"><a class="dark" href="http://lenta.ru/news/2011/12/08/candidates/">Республиканцы призвали к саботажу и тайным убийствам в Иране</a></div>
+<time class="g-date">
+<span class="source">lenta.ru,</span>
+08 декабря 2011
+</time>
+</div>
+<div class="item">
+<div class="title"><a class="dark" href="http://lenta.ru/news/2011/11/23/militaryaction/">Половина американцев одобрили удар по Ирану</a></div>
+<time class="g-date">
+<span class="source">lenta.ru,</span>
+23 ноября 2011
+</time>
+</div>
+</section>
+
+<section class="b-banner b-banner-bottom js-advert"><div id="ban_footer">
+  <script type="text/javascript">
+    var bannerName = 'ban_footer'
+    var bannerFunctionName = 'show'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'bmdya',
+      p2: 'ewts',
+      pct: 'a',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '',
+      'begun-auto-pad': ''
+    };
+    var cssClasses = " ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></section>
+
+</div>
+</div>
+<div class="span4">
+<section class="b-yellow-box">
+<div class="b-yellow-box__wrap">
+<div class="b-yellow-box__header bordered-title">Последние новости</div>
+<div class="item">
+<time class="g-time" datetime=" 17:02, 19 августа 2015" title="19 августа 2015">17:02</time>
+
+<a href="/news/2015/08/19/hse/">ВШЭ предупредила об&nbsp;обострении кризиса в&nbsp;России</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 17:03, 19 августа 2015" title="19 августа 2015">17:03</time>
+
+<a href="/news/2015/08/19/usaschool/">В  Кентукки девушку выгнали из&nbsp;школы за&nbsp;открытые ключицы</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 16:41, 19 августа 2015" title="19 августа 2015">16:41</time>
+
+<a href="/news/2015/08/19/viner/">Винер-Усманова выступила за&nbsp;появление мужчин в&nbsp;художественной гимнастике</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 17:08, 19 августа 2015" title="19 августа 2015">17:08</time>
+
+<a href="/news/2015/08/19/666vipusknikov/">666&nbsp;выпускников школ ДНР стали российскими студентами</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 16:49, 19 августа 2015" title="19 августа 2015">16:49</time>
+
+<a href="/news/2015/08/19/martiannew/">Новый трейлер «Марсианина» появился в&nbsp;сети</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 16:28, 19 августа 2015" title="19 августа 2015">16:28</time>
+
+<a href="/news/2015/08/19/sidmiller/">Чиновник в&nbsp;США отказался извиняться за&nbsp;призыв к&nbsp;ядерному удару по&nbsp;мусульманам</a>
+</div>
+<div class="item">
+<time class="g-time" datetime=" 16:30, 19 августа 2015" title="19 августа 2015">16:30</time>
+
+<a href="/news/2015/08/19/pes/">В Пермском крае у&nbsp;незрячего отобрали собаку-поводыря из-за жестокого обращения</a>
+</div>
+</div>
+</section>
+
+<div class="b-banner-sidebar-rtb"><div id="ban_240x400">
+  <script type="text/javascript">
+    var bannerName = 'ban_240x400'
+    var bannerFunctionName = 'show_b'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'bluqt',
+      p2: 'emhk',
+      pct: 'c',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: 'crlen240=1'
+    };
+    var begunOptions = {
+      'begun-block-id': '410692516',
+      'begun-auto-pad': '390745432'
+    };
+    var cssClasses = "b-banner-sidebar-rtb__adv ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></div>
+<div class="b-banner-sidebar-promo-decorator js-advert"><div id="ban_widget">
+  <script type="text/javascript">
+    var bannerName = 'ban_widget'
+    var bannerFunctionName = 'show'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'bmdxz',
+      p2: 'ewtr',
+      pct: 'a',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '',
+      'begun-auto-pad': ''
+    };
+    var cssClasses = " ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></div>
+<div class="b-banner-sidebar-extra-decorator js-advert"><div id="ban_300x300">
+  <script type="text/javascript">
+    var bannerName = 'ban_300x300'
+    var bannerFunctionName = 'show'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'bmdxy',
+      p2: 'ewtq',
+      pct: 'a',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '',
+      'begun-auto-pad': ''
+    };
+    var cssClasses = " ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></div>
+
+
+</div>
+</div>
+<div class="b-topic-longgrid b-topic-addition">
+<div class="bordered-title"><a href="/rubrics/world/">Другие материалы рубрики</a></div>
+<div class="row">
+<div class="span4"><section class="b-longgrid-column">
+<div class="article item">
+<div class="info g-date">
+<span class="g-date"><span class="time">01:11</span> Сегодня</span>
+</div>
+<a class="js-dh picture" href="/articles/2015/08/19/sanders/"><img alt="Берни Сандерс" class="g-picture" style="max-width: 300px; width: 300px; height: 200px;" src="http://icdn.lenta.ru/images/2015/08/18/14/20150818141302646/top7_1eda65ed74b8eeef42a0ed0039795412.jpg" width="300" height="200" />
+</a>
+<div class="titles">
+<h3>
+<a href="/articles/2015/08/19/sanders/"><span>Непримкнувший</span>
+</a></h3>
+<div class="rightcol">Как критикующий демократов политик может стать их&nbsp;кандидатом в&nbsp;президенты</div>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">17:03</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/usaschool/">В  Кентукки девушку выгнали из&nbsp;школы за&nbsp;открытые ключицы</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">15:26</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/hillary_arctic/">Клинтон поспорила с&nbsp;Обамой по&nbsp;поводу нефтедобычи в&nbsp;Арктике</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">15:24</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/bangkok1/">Таиландская полиция задержала француза по&nbsp;подозрению в&nbsp;причастности к&nbsp;теракту</a>
+</h3>
+</div>
+</div>
+</section>
+</div>
+<div class="span4"><section class="b-longgrid-column">
+<div class="article item">
+<div class="info g-date">
+<span class="g-date"><span class="time">01:37</span> 18 августа 2015</span>
+</div>
+<a class="js-dh picture" href="/articles/2015/08/18/ms13/"><img alt="" class="g-picture" style="max-width: 300px; width: 300px; height: 200px;" src="http://icdn.lenta.ru/images/2015/08/17/17/20150817175633619/top7_c7bd2c6a84f32a3b426ef114f91ca538.jpg" width="300" height="200" />
+</a>
+<div class="titles">
+<h3>
+<a href="/articles/2015/08/18/ms13/"><span>Смертоносные муравьи</span>
+</a></h3>
+<div class="rightcol">Как уличная банда превратилась в&nbsp;угрозу международного масштаба</div>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">14:14</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/bales/">Пентагон опубликовал результаты расследования массового убийства в&nbsp;Афганистане</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">13:24</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/chinese_dog/">Китаянке пригрозили штрафом за&nbsp;комфорт ее&nbsp;собаки</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">13:33</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/bangkok/">В организации теракта в&nbsp;Бангкоке заподозрили уйгуров</a>
+</h3>
+</div>
+</div>
+</section>
+</div>
+<div class="span4"><section class="b-longgrid-column">
+<div class="article item">
+<div class="info g-date">
+<span class="g-date"><span class="time">00:03</span>  7 августа 2015</span>
+</div>
+<a class="js-dh picture" href="/articles/2015/08/07/eros/"><img alt="" class="g-picture" style="max-width: 300px; width: 300px; height: 200px;" src="http://icdn.lenta.ru/images/2015/08/06/17/20150806175124530/top7_1f2cfb40321d58b31cbf36a7f203b8d5.jpg" width="300" height="200" />
+</a>
+<div class="titles">
+<h3>
+<a href="/articles/2015/08/07/eros/"><span>«Китайцы хотят жить всласть»</span>
+</a></h3>
+<div class="rightcol">Какое место секс занимает в&nbsp;традиционной и&nbsp;современной китайской культуре</div>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">12:04</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/manning/">Информатора WikiLeaks Мэннинг осудили за&nbsp;просроченную зубную пасту</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">10:25</span> Сегодня</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/19/palmyra/">Боевики ИГ&nbsp;обезглавили 82-летнего смотрителя античного города Пальмира</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="info g-date">
+<span class="g-date"><span class="time">20:37</span> 18 августа 2015</span>
+</div>
+<div class="titles">
+<h3>
+<a href="/news/2015/08/18/erdogan/">Боевики ИГ&nbsp;назвали Эрдогана сатаной и&nbsp;пообещали взять Стамбул</a>
+</h3>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<section class="b-tabloid">
+<div class="g-layout">
+<div class="b-tabloid__row row">
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/russia/">Россия</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/putincrimea/"><img alt="Russian President Vladimir Putin (front) is seen inside a research bathyscaphe while submerging into the waters of the Black Sea as he takes part in an expedition near Sevastopol, Crimea, August 18, 2015. REUTERS/Alexei Nikolsky/RIA Novosti/Kremlin ATTENTION EDITORS - THIS IMAGE HAS BEEN SUPPLIED BY A THIRD PARTY. IT IS DISTRIBUTED, EXACTLY AS RECEIVED BY REUTERS, AS A SERVICE TO CLIENTS.        TPX IMAGES OF THE DAY      - RTX1ONK7" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/19/20150818191843246/tabloid_9f684c5242890d27ebc5ec7e1a037cf4.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/putincrimea/">Что ищет он&nbsp;на дне морском </a>
+<div class="rightcol">Где президенту России лучше: на&nbsp;земле или под водой </div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/rpc/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/18/20150818184833306/tabloid_be46e199a2414a0b0d9fc183b80e388a.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/rpc/">«Они плюют на&nbsp;нас каждый день»</a>
+<div class="rightcol">Зачем РПЦ строит храмы там, где люди не&nbsp;желают их&nbsp;видеть</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/putin1/">Путин поручил персонально спрашивать с&nbsp;чиновников за&nbsp;работу в&nbsp;советах директоров</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/pes/">В Пермском крае у&nbsp;незрячего отобрали собаку-поводыря из-за жестокого обращения</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/rost_zen/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/14/20/20150814201553983/tabloid_f3929fa3a53b3ed9ec40f0de05cc4baf.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/rost_zen/">За ценой не&nbsp;устоим</a>
+<div class="rightcol">«Единой России» труднее всех объяснить избирателям подорожание продовольствия</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/obrez/">Против стрелявшего из&nbsp;обреза в&nbsp;центре Москвы мужчины возбудили дело</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/russia/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/world/">Мир</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/sanders/"><img alt="Берни Сандерс" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/14/20150818141302646/tabloid_4960a8ca7f2ffc84aad29fb7b6b98991.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/sanders/">Непримкнувший</a>
+<div class="rightcol">Как критикующий демократов политик может стать их&nbsp;кандидатом в&nbsp;президенты</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/usaschool/">В  Кентукки девушку выгнали из&nbsp;школы за&nbsp;открытые ключицы</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/hillary_arctic/">Клинтон поспорила с&nbsp;Обамой по&nbsp;поводу нефтедобычи в&nbsp;Арктике</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/bangkok1/">Таиландская полиция задержала француза по&nbsp;подозрению в&nbsp;причастности к&nbsp;теракту</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/chinese_dog/">Китаянке пригрозили штрафом за&nbsp;комфорт ее&nbsp;собаки</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/ms13/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/17/20150817175633619/tabloid_584507760b355de8b43518b4b4d731a3.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/ms13/">Смертоносные муравьи</a>
+<div class="rightcol">Как уличная банда превратилась в&nbsp;угрозу международного масштаба</div>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/world/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/ussr/">Бывший СССР</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/vsu/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/19/20150818193622641/tabloid_9865f6a8a4c98e0cc162e04973d2cc0f.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/vsu/">Второе Дебальцево</a>
+<div class="rightcol">Украина сосредоточила на&nbsp;линии фронта огромную армию</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/17/moldavia/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/16/20/20150816205807304/tabloid_1d1f887f14af0b8a5c8a9fbd07365c9e.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/17/moldavia/">Повторение Крыма</a>
+<div class="rightcol">Почему генсек Совета Европы назвал Молдавию следующей Украиной</div>
+</div>
+<div class="b-tabloid__topic">
+<span class="author"><a class="js-dh" href="/columns/2015/08/19/babitski/">Андрей Бабицкий:</a></span>
+<a class="article js-dh" href="/columns/2015/08/19/babitski/">Война и&nbsp;мир </a>
+<div class="rightcol">Решатся ли&nbsp;ВСУ на&nbsp;штурм Донецка</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/rvi/">Украинцы прокопали 180&nbsp;километров противотанковых рвов на&nbsp;границе с&nbsp;Россией</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/kohver1/">Эстонцы поддержат осужденного за&nbsp;шпионаж Кохвера желтой лентой</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/askoldusa/">В киевской «Аскольдовой могиле» поставили памятник добровольцу из&nbsp;США</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/ussr/">Все материалы</a>
+</div>
+</div>
+</div>
+<div class="b-tabloid__row row">
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/economics/">Финансы</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/oilfuture/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/15/20150817154229237/tabloid_840fed8db2d62303014d14a1791825d6.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/oilfuture/">Неуловимые баррели </a>
+<div class="rightcol">Почему не&nbsp;стоит верить прогнозам цен на&nbsp;нефть </div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/devalue/">Казахстанский тенге резко обесценился к&nbsp;доллару</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/gdp/">Росстат оценил падение ВВП России</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/chinafall/">Треть крупных инвесторов покинула Китай </a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/fitch/">Fitch повысило рейтинг Греции</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/forexbln/">Крупнейшие банки мира обвинили в&nbsp;махинациях с&nbsp;валютными курсами </a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/ruble/">Путин и&nbsp;Медведев обсудили курс рубля </a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/economics/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/business/">Бизнес</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/horse/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/14/20150818145342859/tabloid_ed418ae5137aa0eea222f93b6973c4e1.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/horse/">Лошадиная доза</a>
+<div class="rightcol">Почему конина становится «подставным» мясом </div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/californianwine/"><img alt="Сбор винограда в Калифорнии " class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/20/20150817200959830/tabloid_27ad60b8f18c74a6ad2508fba81f094c.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/californianwine/">Калифорния под прицелом</a>
+<div class="rightcol">Почему Роспотребнадзор запретил американские вина</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/auchan1/">«Ашан» обратился в&nbsp;суд с&nbsp;исками к&nbsp;Россельхознадзору</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/yaposha/">Банк «Траст» решил добиваться банкротства «Япоши»</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/auchan/">Роспотребнадзор решил проверить все магазины «Ашан» в&nbsp;Москве </a>
+</div>
+<div class="b-tabloid__topic">
+<span class="author"><a class="js-dh" href="/columns/2015/08/18/tankaev/">Рустам Танкаев:</a></span>
+<a class="article js-dh" href="/columns/2015/08/18/tankaev/">Ворота в&nbsp;Арктику</a>
+<div class="rightcol">Почему «Лукойл» так рвется на&nbsp;Таймыр</div>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/business/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/forces/">Силовые структуры</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/f35/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/13/20150818132934750/tabloid_f85ce47eb8fb079c9aa62dc08031e2bb.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/f35/">Строевая молния</a>
+<div class="rightcol">F-35 «Лайтнинг II» достиг начальной боеготовности</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/06/bomb/"><img alt="Хиросима. 1945 год" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/05/15/20150805150027934/tabloid_89c5ee90978162f620fa0543d155bfee.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/06/bomb/">Просто большая бомба</a>
+<div class="rightcol">Оружие, изменившее облик войны</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/12/submarine/"><img alt="Атомный подводный ракетный крейсер К-141 «Курск»." class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/11/16/20150811164417941/tabloid_6c86c8ccf39eda0d3d80096c8bdeccad.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/12/submarine/">Люди, которых не&nbsp;было</a>
+<div class="rightcol">«Личный состав» и&nbsp;его отличия от&nbsp;человека</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/02/12/subs/">Австралия отказалась от&nbsp;открытого тендера на&nbsp;поставку подлодок</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/sokolov/">Мосгорсуд оставил под стражей подозреваемого в&nbsp;экстремизме журналиста Соколова</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/02/16/rafale/">СМИ узнали об&nbsp;отказе Индии покупать 126&nbsp;французских истребителей Rafale</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/kuzia/">Единственный российский авианосец завершил доковый ремонт </a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/forces/">Все материалы</a>
+</div>
+</div>
+</div>
+<div class="b-tabloid__row row">
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/science/">Наука и техника</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/footballteam/">В Team Fortress 2&nbsp;добавили вдохновленный футболом режим</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/htv/">Япония в&nbsp;пятый раз запустила к&nbsp;МКС грузовик HTV</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/brain/">Американские ученые заявили о&nbsp;выращенной копии человеческого мозга</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/intel1/">Intel рассказал о&nbsp;новом классе памяти в&nbsp;1000&nbsp;раз быстрее флеша</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/dukenukem/">Права на&nbsp;Duke Nukem полностью отошли создателям Borderlands</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/iphone6s/">СМИ назвали дату начала продаж iPhone 6S и&nbsp;iPhone 6S Plus</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/science/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/sport/">Спорт</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/figurewed/"><img alt="MOSCOW, RUSSIA. AUGUST 18, 2015. Two-time Olympic figure skating champions Maxim Trankov (L) and Tatiana Volosozhar during their wedding at the Rose Bar restaurant. Vyacheslav Prokofyev/TASS
+" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/19/14/20150819144050351/tabloid_bdfff384ef6a14ae54bcece44df4a669.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/figurewed/">Олимпийские кольца</a>
+<div class="rightcol">Почему фигуристы чаще других спортсменов женятся друг на&nbsp;друге</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/viner/">Винер-Усманова выступила за&nbsp;появление мужчин в&nbsp;художественной гимнастике</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/piqueherard/">Игрока «Барселоны» дисквалифицировали за&nbsp;оскорбление матери судьи</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/kryliafoot/">Фанатам «Крыльев Советов» предложили поменять сигареты на&nbsp;шанс увидеть Аршавина</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/tennispadre/">Испанец объяснил ограбления банков заботой о&nbsp;теннисной карьере дочерей</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/ecuadorfighting/">Футболистки устроили массовую драку в&nbsp;матче чемпионата Эквадора</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/mayweather/">Американский суд расследует победу Мэйуэзера над Пакьяо</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/sport/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/culture/">Культура</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/photo/2015/08/19/movie/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/16/20150817164502645/tabloid_388ecf7efeedd2e8785dbf8ccce91041.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/photo/2015/08/19/movie/">Эпоха возрождения</a>
+<div class="rightcol">Какие культовые фильмы в&nbsp;ближайшее время станут сериалами</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/17/snuff/"><img alt="Виктор Пелевин" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/12/17/20150812170535767/tabloid_b688ed62c605e1fcd250ccfd78ed82bc.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/17/snuff/">Чисто английское убийство</a>
+<div class="rightcol">Правила жизни в&nbsp;Уркаине по&nbsp;Виктору Пелевину</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/youngadult/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/19/20150817192656112/tabloid_10fd61d6ab423bbe1bcc37017e10dacb.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/youngadult/">Соври, но&nbsp;не сейчас </a>
+<div class="rightcol">Антология новой детской литературы: от&nbsp;15&nbsp;до 18&nbsp;лет (часть I)</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/artfound/">Полиция нашла похищенные в&nbsp;Тарусе картины Айвазовского и&nbsp;Поленова</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/martiannew/">Новый трейлер «Марсианина» появился в&nbsp;сети</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/chariotsoffire/">Олимпийская драма «Огненные колесницы» получит сразу два сиквела</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/culture/">Все материалы</a>
+</div>
+</div>
+</div>
+<div class="b-tabloid__row row">
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/media/">Интернет и СМИ</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/unicorns/"><img alt="Билборд с рекламой Snapchat" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/20/20150817200116634/tabloid_7b666b52e5e358e7a06facfc0e9344c4.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/unicorns/">О чем мечтают «единороги»</a>
+<div class="rightcol">Десятка свежих высокотехнологичных стартапов с&nbsp;оценкой выше миллиарда долларов</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/applemusic/">Apple опровергла сообщения об&nbsp;отказе половины подписчиков от&nbsp;Apple Music</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/am/">Хакеры опубликовали данные 32&nbsp;миллионов пользователей сайта для измен</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/rmg/">Минкомсвязи одобрило создание патриотического музыкального холдинга</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/buzzfeedinvestment/">BuzzFeed подтвердил получение 200&nbsp;миллионов долларов</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/icann/">США сохранят контроль над интернетом еще минимум на&nbsp;год</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/14/topnet/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/14/09/20150814090955365/tabloid_909daa112e21b21d4af44d8d9ec436b1.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/14/topnet/">Из космоса в&nbsp;соцсети</a>
+<div class="rightcol">Как раскручиваются в&nbsp;соцсетях большие компании и&nbsp;отдельные пользователи</div>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/media/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title">
+<a href="/rubrics/life/">Из жизни</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/19/topstrange/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/15/20150818155905002/tabloid_73407a2ebb4f44f868517fbad9f6122f.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/19/topstrange/">«Прекратите дождь в&nbsp;Москве»</a>
+<div class="rightcol">Самые странные просьбы россиян о&nbsp;помощи в&nbsp;интернете</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/17/london/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/11/16/20150811160111750/tabloid_0f4f342a5797c60ee6449e3cc4b5c347.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/17/london/">Я уеду жить в&nbsp;Лондон</a>
+<div class="rightcol">История писательницы из&nbsp;Москвы, обосновавшейся в&nbsp;британской столице</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/18/worldtrip/"><img alt="Гуннар Гарфорс  " class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/17/15/20150817154835124/tabloid_589f7ee890c18f4b2f006f5f4f3eb1bb.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/18/worldtrip/">Вокруг света за&nbsp;37&nbsp;лет </a>
+<div class="rightcol">Как норвежец Гуннар Гарфорс посетил 198&nbsp;стран, не&nbsp;увольняясь с&nbsp;работы</div>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/vampircat/">Новой звездой Instagram стала кошка-вампир</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/littlebear/">В США медвежонок застрял в&nbsp;банке из-под спортивного питания</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/18/beer/">В Германии воры похитили крышечки с&nbsp;пивных бутылок</a>
+</div>
+<div class="b-tabloid__topic">
+<a href="/news/2015/08/19/applemusic1/">Apple объявила участников музыкального фестиваля в&nbsp;Лондоне</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/life/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title" style="border-top-color: black">
+<a class="icons-sprite icons-logo_motor" href="/rubrics/motor/"></a>
+<a target="_blank" class="outer_link icons-sprite icons-outer_link" href="http://motor.ru"></a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://motor.ru/articles/2015/08/19/sandero2/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/19/12/20150819125958079/tabloid_a00bcd7d273585953d7c1c4b8319a122.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://motor.ru/articles/2015/08/19/sandero2/">Грязный я</a>
+<div class="rightcol">Столкновения с «Газелью» и&nbsp;бездорожье — длительный тест Renault Sandero Stepway</div>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://motor.ru/news/2015/08/19/elantra/">Компания Hyundai показала дизайн Elantra нового поколения</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://motor.ru/articles/2015/08/18/caymangt4/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/18/14/20150818143706977/tabloid_81eafa12c7caa6fbfa512b29f5b92380.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://motor.ru/articles/2015/08/18/caymangt4/">Крокодилы не&nbsp;летают</a>
+<div class="rightcol">Lada Kalina и&nbsp;ремонт дороги против Porsche Cayman GT4</div>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://motor.ru/news/2015/08/19/cruiserusa/">Самый мощный Toyota Land Cruiser 200&nbsp;получил новый «автомат»</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://motor.ru/articles/2015/08/19/hybrid/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/19/08/20150819080243616/tabloid_95320f960d3b2c62a30427affa85b295.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://motor.ru/articles/2015/08/19/hybrid/">Сколько вешать в&nbsp;граммах</a>
+<div class="rightcol">Зачем спорткары превращают в&nbsp;гибриды</div>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://motor.ru/news/2015/08/19/etron/">Audi привезет во&nbsp;Франкфурт предвестника электрического кроссовера</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/motor/">Все материалы</a>
+</div>
+</div>
+</div>
+<div class="b-tabloid__row row">
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title" style="border-top-color: #9a8f7c">
+<a class="icons-sprite icons-logo_dom" href="/rubrics/realty/"></a>
+<a target="_blank" class="outer_link icons-sprite icons-outer_link" href="http://dom.lenta.ru"></a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://dom.lenta.ru/photo/2015/08/07/weirdskyscrapers/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/07/31/18/20150731184504681/tabloid_b6b4a71f5f19b6e53ea75e5c7f89f533.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://dom.lenta.ru/photo/2015/08/07/weirdskyscrapers/">С высоко поднятой головой</a>
+<div class="rightcol">10&nbsp;самых необычных небоскребов мира</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://dom.lenta.ru/articles/2015/08/06/invinoveritas/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/06/12/20150806121848922/tabloid_3dde7e740458d1f1ea40a78ab7f89d82.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://dom.lenta.ru/articles/2015/08/06/invinoveritas/">Вот, выпей вина</a>
+<div class="rightcol">Сколько стоит недвижимость рядом с&nbsp;российскими и&nbsp;зарубежными виноградниками</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://dom.lenta.ru/articles/2015/08/03/kommunalka/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/07/30/19/20150730192812926/tabloid_fd79abdf6b601caa1424574648fde47b.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://dom.lenta.ru/articles/2015/08/03/kommunalka/">Я не&nbsp;жадный, я&nbsp;домовитый</a>
+<div class="rightcol">Как уменьшить коммунальные платежи за&nbsp;квартиру</div>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://dom.lenta.ru/news/2015/08/04/lube/">Памятник группе «Любэ» в&nbsp;подмосковных Люберцах назовут «Дуся-агрегат»</a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" target="_blank" href="http://dom.lenta.ru/photo/2015/07/15/smallapartmentinteriors/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/07/14/17/20150714171618148/tabloid_c77641870a5457ed305725073b1ac26e.jpg" width="96" height="64" />
+</a><a class="article js-dh" target="_blank" href="http://dom.lenta.ru/photo/2015/07/15/smallapartmentinteriors/">Метр с&nbsp;кепкой</a>
+<div class="rightcol">Дизайнерские решения для малогабаритных квартир</div>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://dom.lenta.ru/news/2015/08/10/chord/">Власти Москвы задумались ввести плату за&nbsp;проезд по&nbsp;Северо-Восточной хорде</a>
+</div>
+<div class="b-tabloid__topic">
+<a target="_blank" href="http://dom.lenta.ru/news/2015/08/06/berriesapp/">В Финляндии разработают мобильное приложение для сбора ягод</a>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/realty/">Все материалы</a>
+</div>
+</div>
+<div class="span4">
+<div class="b-tabloid__item">
+<div class="bordered-title" style="border-top-color: black">
+<a class="icons-sprite icons-logo_library" href="/rubrics/library/"></a>
+<a target="_blank" class="outer_link icons-sprite icons-outer_link" href="http://lenta.ru/rubrics/library/"></a>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/06/20/trumpel/"><img alt="Присяга воинов-иудеев" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/06/18/14/20150618142613535/tabloid_da1625829d179cc03203cb2810a65351.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/06/20/trumpel/">Путь Трумпельдора</a>
+<div class="rightcol">О русском офицере, ставшем национальным героем Израиля</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/16/innovation1/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/14/10/20150814100809557/tabloid_7bda4da9d05ddd34ae364f28d719ee95.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/16/innovation1/">«Мы сами незаметно создаем инновации»</a>
+<div class="rightcol">Социолог Константин Фурсов о&nbsp;том, что движет изобретателями</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/12/meshkov/"><img alt="Митинг сторонников проведения референдума о независимости Крыма. 1992 год" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/11/15/20150811155013598/tabloid_c0c97275f376758aedf2864833b6fab7.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/12/meshkov/">«Ельцину было плевать на&nbsp;Крым»</a>
+<div class="rightcol">Первый президент Крыма Юрий Мешков о&nbsp;жизни полуострова во&nbsp;время перестройки</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/16/babyboomer/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/12/14/20150812145149623/tabloid_537a75602b21b937f40aabba70a105b1.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/16/babyboomer/">Из Саратова в&nbsp;Москву за&nbsp;колбасой</a>
+<div class="rightcol">Книга Дональда Рейли «Советские бэйби-бумеры»</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/09/cosmism/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/07/13/20150807132123336/tabloid_99ae2d937e6cbc14a0671337c1c0ad7e.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/09/cosmism/">«Предоставить право на&nbsp;жизнь и&nbsp;мертвым»</a>
+<div class="rightcol">Филолог Биргит Менцель о&nbsp;русских космистах и&nbsp;идеях футурологов Курцвейла и&nbsp;Капра</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2014/10/23/osowiec/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2014/10/23/19/20141023192241495/tabloid_2433b8f68f83ee9632e0fb1c6497b495.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2014/10/23/osowiec/">Крепость Осовец</a>
+<div class="rightcol">Конкурс читательских рассказов «Ленты.ру»</div>
+</div>
+<div class="b-tabloid__topic">
+<a class="js-dh" href="/articles/2015/08/08/alterenergy/"><img alt="" class="g-picture" style="max-width: 96px; width: 96px; height: 64px;" src="http://icdn.lenta.ru/images/2015/08/04/18/20150804183338804/tabloid_08a22041c4774021ddcce37b6c42a016.jpg" width="96" height="64" />
+</a><a class="article js-dh" href="/articles/2015/08/08/alterenergy/">Когда нефть станет не&nbsp;нужна</a>
+<div class="rightcol">Книга Владимира Сидоровича «Мировая энергетическая революция»</div>
+</div>
+</div>
+<div class="b-tabloid__more">
+<a href="/rubrics/library/">Все материалы</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div id="root_footer"></div>
+</div>
+<footer class="b-footer" id="footer">
+<div class="g-layout">
+<!--AdFox START-->
+<!--adfox-ssp-->
+<!--Площадка: Syncer / all / syncer-->
+<!--Категория: <не задана>-->
+<!--Тип баннера: 1x1-->
+<script type="text/javascript">
+<!--
+if (typeof(pr) == 'undefined') { var pr = Math.floor(Math.random() * 1000000); }
+var addate = new Date();
+document.write('<iframe src="http://ads.adfox.ru/202433/getCode?p1=biozy&amp;p2=v&amp;p3=a&amp;p4=a&amp;pct=a&amp;plp=a&amp;pli=a&amp;pop=a&amp;pfc=a&amp;pfb=a&amp;pr=' + pr + '&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '" frameBorder="0" width="1" height="1" marginWidth="0" marginHeight="0" scrolling="no" style="border: 0px; margin: 0px; padding: 0px; position: absolute; left: -9999px"><a href="http://ads.adfox.ru/202433/goDefaultLink?p1=biozy&amp;p2=v" target="_top"><img src="http://ads.adfox.ru/202433/getDefaultImage?p1=biozy&amp;p2=v" border="0" alt=""><\/a><\/iframe>');
+//-->
+</script>
+<noscript>
+<iframe src="http://ads.adfox.ru/202433/getCode?p1=biozy&amp;p2=v&amp;p3=a&amp;p4=a&amp;pct=a&amp;plp=a&amp;pli=a&amp;pop=a&amp;pfc=a&amp;pfb=a" frameBorder="0" width="1" height="1" marginWidth="0" marginHeight="0" scrolling="no" style="border: 0px; margin: 0px; padding: 0px;"><a href="http://ads.adfox.ru/202433/goDefaultLink?p1=biozy&amp;p2=v" target="_top"><img src="http://ads.adfox.ru/202433/getDefaultImage?p1=biozy&amp;p2=v" border="0" alt=""></a></iframe>
+</noscript>
+<!--AdFox END-->
+
+<script type="text/javascript">
+(function(){
+    (new Image).src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//sync.rambler.ru/emily?partner_id=begun';
+})();
+</script>
+<div class="counters">
+<span class="counter counter_top100" id="top100"></span>
+<span class="counter counter_liveinternet" id="liveinternet-counter"></span>
+</div>
+<script type="text/javascript">
+<!--
+xtnv = document;   //parent.document or top.document or document
+xtsd = "http://logc278";
+xtsite = "515389";
+xtn2 = '2';        // level 2 site ID
+xtpage = "Мир::Политика::lenta.ru:_Мир:_Политика:_Чиновник_в_США_отказался_извиняться_за_призыв_к_ядерному_удару_по_мусульманам"; //page name (with the use of :: to create chapters)
+xtdi = "";         //implication degree
+xt_multc = "&x1=http://lenta.ru/news/2015/08/19/sidmiller";     //all the xi indicators (like "&x1=...&x2=....&x3=...")
+xt_an = "";        //user ID
+xt_ac = "";        //category ID
+xt_xtcpath = 'icdn.lenta.ru/assets/shared/xtcore-1ea91c75a29a5df6723ca754a3219d85.js';      //xtcore.js path location (without http://)
+//-->
+</script>
+<script type="text/javascript">
+<!--
+//do not modify below
+if (window.xtparam!=null){window.xtparam+="&ac="+xt_ac+"&an="+xt_an+xt_multc;}
+else{window.xtparam="&ac="+xt_ac+"&an="+xt_an+xt_multc;};
+(function(){
+  var at=document.createElement('script');
+  at.type='text/javascript';
+  at.async=true;
+  at.src='http://'+xt_xtcpath;
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]||document.getElementsByTagName('script')[0].parentNode).insertBefore(at,null);
+})();
+//-->
+</script>
+<noscript>
+<img width="1" height="1" alt="" src="http://logc278.xiti.com/hit.xiti?s=515389&s2=&p=&di=&an=&ac=" >
+</noscript>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P87FV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P87FV5');</script>
+<!-- End Google Tag Manager -->
+
+<noscript><img src="//www.tns-counter.ru/V13a****rambler_ru/ru/UTF-8/tmsec=lenta_world/" width="0" height="0" alt="" /></noscript>
+
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter4308403 = new Ya.Metrika({
+          id:4308403,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+        w.yaCounter27714477 = new Ya.Metrika({
+          id:27714477,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+
+  var _top100q = _top100q || [];
+
+  _top100q.push(["setAccount", "80674"]);
+  _top100q.push(["trackPageviewByLogo", document.getElementById("top100")]);
+
+
+  (function(){
+   var top100 = document.createElement("script"); top100.type = "text/javascript";
+
+   top100.async = true;
+   top100.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//st.top100.ru/pack/pack.min.js";
+   var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(top100, s);
+  })();
+
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/4308403" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/27714477" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">
+
+function catchOutboundClick(link) {
+    link.onclick = function(e){
+      e.preventDefault();
+      trackOutboundLink(link, "Outbound Links", link.hostname, (link.target === '_blank' || e.ctrlKey || e.metaKey || e.which == 2));
+    }
+}
+
+function trackOutboundLink(link, category, action, new_window) {
+  try {
+    ga('send', {
+      'hitType': 'event',
+      'eventCategory': category,
+      'eventAction': action
+    });
+  } catch(err){}
+
+  if(new_window){
+    window.open(link.href, '_blank');
+  } else {
+    document.location.href = link.href;
+  }
+}
+
+var outRe = new RegExp('^http:\/\/.+$','i');
+var inRe = new RegExp('^http:\/\/'+location.hostname.replace("www.", "")+'.+$','i');
+var links = document.getElementsByTagName("a");
+
+for (var i = 0; i < links.length; i++) {
+  var link = links[i];
+  if (outRe.test(link.href) && !inRe.test(link.href)){
+    catchOutboundClick(link);
+  }
+}
+</script>
+
+
+<div class="versions">
+<span class="group mobile">
+<a href="http://m.lenta.ru/news/2015/08/19/sidmiller/"><span class="icons-sprite icons-iphone"></span>
+<span class="label">Мобильная версия</span>
+</a></span>
+<span class="group orphus">
+<script src="http://icdn.lenta.ru/assets/vendors/orphus-7af7ae85f5330b67cefbeb30650e2893.js"></script>
+<a class="hide" href="http://orphus.ru" id="orphus" target="_blank"><img src="http://icdn.lenta.ru/assets/orphus-a7cee47f63d415753ceeb32e860ef66e.gif" alt="Orphus" width="88" height="31" /></a>
+<a href="http://orphus.ru"><span class="icons-sprite icons-orphus"></span>
+<span>
+<strong>Нашли опечатку? <br/></strong>
+Orphus: Ctrl+Enter
+</span>
+</a></span>
+</div>
+<div class="menu">
+<span class="socials">
+<a target="_blank" class="icons_socials icons-sprite icons-fb" href="http://facebook.com/lenta.ru"></a>
+<a target="_blank" class="icons_socials icons-sprite icons-twitter" href="http://twitter.com/lentaruofficial"></a>
+<a target="_blank" class="icons_socials icons-sprite icons-vk" href="http://vk.com/lentaru"></a>
+<a target="_blank" class="icons_socials icons-sprite icons-ok" href="http://ok.ru/lentaru/topics"></a>
+<a class="icons_socials icons-sprite icons-rss" href="/rss"></a>
+</span>
+<span class="links">
+<a href="/info/">Редакция</a>
+<a target="_blank" href="http://reklama.rambler.ru/sites/lenta/">Реклама</a>
+<a href="/info/posts/mediakit/">Медиакит</a>
+<a href="mailto:it@lenta-co.ru">Техподдержка</a>
+<a href="/specprojects/">Спецпроекты</a>
+</span>
+<span class="copyright">
+&copy; 1999&ndash;2015 ООО «Лента.Ру».
+</span>
+</div>
+
+</div>
+</footer>
+
+<div class="b-banner b-banner_branding" id="advert-branding"><div id="ban_380x600">
+  <script type="text/javascript">
+    var bannerName = 'ban_380x600'
+    var bannerFunctionName = 'show'
+    var bannerFunction = Adf.banner[bannerFunctionName];
+    var bannerOptions = {
+      p1: 'bmdxx',
+      p2: 'ewtp',
+      pct: 'a',
+      puid6: 'WORLD',
+      puid18: 'WORLD_POLITIC',
+      criteo: ''
+    };
+    var begunOptions = {
+      'begun-block-id': '',
+      'begun-auto-pad': ''
+    };
+    var cssClasses = " ";
+    
+    switch (bannerFunctionName) {
+      case 'show':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'show_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+      case 'showScroll':
+        bannerFunction(bannerName, bannerOptions, cssClasses);
+        break;
+      case 'showScroll_b':
+        bannerFunction(bannerName, bannerOptions, begunOptions, cssClasses);
+        break;
+    }
+  </script>
+</div></div>
+<div class="b-editor-panel" id="editor-panel"><a class="button button_pen" href="http://ed.lenta.ru/news/2015/08/19/sidmiller/">
+    <span class="icons-sprite icons-pen"></span></a>
+</div>
+<script src="http://icdn.lenta.ru/assets/lenta-4e10fa2d7a0db30e7a483f9c3ff849a8.js" debug="false"></script>
+<script>
+  window.Lenta = {"kind":"topics","type":"news","title_prefix":false,"bloc_slug":"world","tag_slug":"politic","part_slug":false,"counter":true,"bloc_title":"\u041c\u0438\u0440","tag_title":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","xt_rubric":"\u041c\u0438\u0440","xt_subrubric":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430"};
+</script>
+<script src="http://icdn.lenta.ru/assets/topic-1ce0dc4d87d74c9974289dcbd59f1ef0.js" debug="false"></script>
+
+<iframe src="http://awaps.yandex.ru/0/9947/001001.htm" width="1" height="1" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000" style="left: -9999px; position: absolute;"></iframe>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJBSQR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJBSQR');</script>
+
+<script>
+  _green.defineSlot('9178', [1, 1], 'bhdfdWsdTwe_Hsdlfhjk')
+</script>
+<div id="bhdfdWsdTwe_Hsdlfhjk" style="display: none">
+<script>
+  _green.display('bhdfdWsdTwe_Hsdlfhjk')
+</script>
+</div>
+<script src="https://cdn.onthe.io/io.js?nsddKHekcmRQ" async="async"></script>
+
+</body>
+</html>
