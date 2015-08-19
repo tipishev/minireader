@@ -118,9 +118,15 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 textractor.py
-badd +0 ./utils.py
-badd +0 ./main.py
-badd +0 ./sources/gazeta
+badd +1 ./utils.py
+badd +1 ./main.py
+badd +97 ./sources/gazeta
+badd +0 out.txt
+badd +260 ./sources/slashdot
+badd +3 ./sources/slon
+badd +1 ./sources/lenta
+badd +229 ./sources/meduza
+badd +0 ./config.py
 args textractor.py
 edit ./main.py
 set splitbelow splitright
@@ -129,16 +135,33 @@ vsplit
 1wincmd h
 wincmd _ | wincmd |
 split
-1wincmd k
+wincmd _ | wincmd |
+split
+wincmd _ | wincmd |
+split
+3wincmd k
 wincmd w
+wincmd w
+wincmd w
+wincmd w
+wincmd _ | wincmd |
+split
+1wincmd k
 wincmd w
 wincmd t
 set winheight=1 winwidth=1
-exe '1resize ' . ((&lines * 18 + 22) / 45)
+exe '1resize ' . ((&lines * 19 + 22) / 45)
 exe 'vert 1resize ' . ((&columns * 86 + 87) / 174)
-exe '2resize ' . ((&lines * 24 + 22) / 45)
+exe '2resize ' . ((&lines * 4 + 22) / 45)
 exe 'vert 2resize ' . ((&columns * 86 + 87) / 174)
-exe 'vert 3resize ' . ((&columns * 87 + 87) / 174)
+exe '3resize ' . ((&lines * 17 + 22) / 45)
+exe 'vert 3resize ' . ((&columns * 86 + 87) / 174)
+exe '4resize ' . ((&lines * 0 + 22) / 45)
+exe 'vert 4resize ' . ((&columns * 86 + 87) / 174)
+exe '5resize ' . ((&lines * 18 + 22) / 45)
+exe 'vert 5resize ' . ((&columns * 87 + 87) / 174)
+exe '6resize ' . ((&lines * 24 + 22) / 45)
+exe 'vert 6resize ' . ((&columns * 87 + 87) / 174)
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -148,12 +171,23 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 13 - ((8 * winheight(0) + 9) / 18)
+let s:l = 23 - ((6 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
-normal! 028|
+23
+normal! 040|
+wincmd w
+argglobal
+enew
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
 wincmd w
 argglobal
 edit ./utils.py
@@ -165,12 +199,29 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 17 - ((10 * winheight(0) + 12) / 24)
+let s:l = 4 - ((3 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-17
-normal! 017|
+4
+normal! 0
+wincmd w
+argglobal
+edit ./config.py
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 9 - ((0 * winheight(0) + 0) / 0)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+9
+normal! 029|
 wincmd w
 argglobal
 edit ./sources/gazeta
@@ -182,18 +233,43 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 316 - ((0 * winheight(0) + 21) / 43)
+let s:l = 111 - ((1 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-316
+111
 normal! 02|
 wincmd w
-exe '1resize ' . ((&lines * 18 + 22) / 45)
+argglobal
+edit out.txt
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 83 - ((11 * winheight(0) + 12) / 24)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+83
+normal! 04|
+wincmd w
+6wincmd w
+exe '1resize ' . ((&lines * 19 + 22) / 45)
 exe 'vert 1resize ' . ((&columns * 86 + 87) / 174)
-exe '2resize ' . ((&lines * 24 + 22) / 45)
+exe '2resize ' . ((&lines * 4 + 22) / 45)
 exe 'vert 2resize ' . ((&columns * 86 + 87) / 174)
-exe 'vert 3resize ' . ((&columns * 87 + 87) / 174)
+exe '3resize ' . ((&lines * 17 + 22) / 45)
+exe 'vert 3resize ' . ((&columns * 86 + 87) / 174)
+exe '4resize ' . ((&lines * 0 + 22) / 45)
+exe 'vert 4resize ' . ((&columns * 86 + 87) / 174)
+exe '5resize ' . ((&lines * 18 + 22) / 45)
+exe 'vert 5resize ' . ((&columns * 87 + 87) / 174)
+exe '6resize ' . ((&lines * 24 + 22) / 45)
+exe 'vert 6resize ' . ((&columns * 87 + 87) / 174)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
