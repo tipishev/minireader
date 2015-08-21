@@ -2,12 +2,54 @@
 
 import codecs
 import re
-from bleach import clean, linkify, ALLOWED_TAGS
-from utils import unify_spaces, drop_tags, drop_empty_tags
-from config import *
+from bs4 import BeautifulSoup, Comment
 
-from bs4 import BeautifulSoup  # FIXME remove
+TRASH_TAGS = ['script', 'style']
+# INFORMATIVE_TAGS = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
+INFORMATIVE_TAGS = ['title', 'h2']
+PARSER = 'html5lib'
 
+
+# should go to utils
+
+
+def unify_spaces(string):
+    suffix = re.compile(r"\s+", re.UNICODE)
+    return suffix.sub(r" ", string)
+
+
+# soup functions
+def drop_tags(soup, tags_to_drop):
+    for tag in soup.findAll(tags_to_drop):
+        tag.extract()
+    return soup
+
+
+def drop_comments(soup):
+    for c in soup.find_all(text=lambda text: isinstance(text, Comment)):
+        c.extract()
+    return soup
+
+def keep_tags(soup, tags_to_keep):
+    return soup.find_all(tags_to_keep)
+
+# tag list functions
+def drop_attributes(tags):
+    for tag in tags:
+            tag.attrs = {}
+    return tags
+
+# def drop_empty_tags(source, tags_to_filter):
+#     tags_to_filter = [t for t in tags_to_filter if t != 'br']  # <br> is OK to leave unclosed
+#     soup = BeautifulSoup(source)
+#     for tag_name in tags_to_filter:
+#         empty_tags = soup.findAll(lambda tag: tag.name == tag_name
+#                                   and not tag.contents
+#                                   and (tag.string is None or not tag.string.strip()))
+#         [empty_tag.extract() for empty_tag in empty_tags]
+#     return str(soup)
+
+# getting the data
 def get_raw_html():
     with codecs.open('sources/gazeta', 'r', 'cp1251') as f:
     # with codecs.open('sources/slon', 'r', 'utf8') as f:
@@ -15,35 +57,17 @@ def get_raw_html():
     # with codecs.open('sources/slashdot', 'r', 'utf8') as f:
         return f.read()
 
-def escape_links(attrs, new, allowed_prefixes=('http://', 'https://')):
-    href = attrs.get('href', '').lstrip()  # to fix hrefs starting with blanks
-    text = attrs.get('_text')
-    if not new and href.startswith(allowed_prefixes):
-        # attrs['_text'] = '{}[{}]'.format(text, href)
-        attrs['_text'] = '[{}]'.format(href)
-    else:
-        attrs['_text'] = ''
-    return attrs
-    return None
-
 def extract_text(raw_html):
-    text = raw_html
-    text = unify_spaces(text)
-    text = drop_tags(text, ['script', 'style'])
-    informative_tags = ['a', 'p', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-    text = clean(
-        text,
-        tags=informative_tags,
-        strip=True,
-        strip_comments=True,
-    )
-    text = linkify(text, callbacks=[escape_links])
-    text = clean(text, tags=['p'], strip=True)  # keep only text from <a> tags
-    soup = BeautifulSoup(text)
-    text = soup.prettify()
-    # text = drop_empty_tags(text, informative_tags)
 
-    return str(text)
+    soup = BeautifulSoup(raw_html, PARSER)
+    soup = drop_comments(soup)
+    soup = drop_tags(soup, TRASH_TAGS)
+    print(soup)
+
+    tags = keep_tags(soup, INFORMATIVE_TAGS)
+    # tags = drop_attributes(tags)
+    text = str(tags)
+    return text
 
 def main():
     with open('out.txt', 'w') as f:
