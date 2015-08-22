@@ -127,12 +127,16 @@ badd +3 ./sources/slon
 badd +1 ./sources/lenta
 badd +229 ./sources/meduza
 badd +9 ./config.py
+badd +1 ~/.vim/UltiSnips/python.snippets
 args textractor.py
 edit ./main.py
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-1wincmd h
+wincmd _ | wincmd |
+vsplit
+2wincmd h
+wincmd w
 wincmd w
 wincmd _ | wincmd |
 split
@@ -140,11 +144,24 @@ split
 wincmd w
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 86 + 87) / 174)
-exe '2resize ' . ((&lines * 18 + 22) / 45)
-exe 'vert 2resize ' . ((&columns * 87 + 87) / 174)
-exe '3resize ' . ((&lines * 24 + 22) / 45)
-exe 'vert 3resize ' . ((&columns * 87 + 87) / 174)
+exe 'vert 1resize ' . ((&columns * 30 + 68) / 136)
+exe 'vert 2resize ' . ((&columns * 63 + 68) / 136)
+exe '3resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 3resize ' . ((&columns * 41 + 68) / 136)
+exe '4resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 4resize ' . ((&columns * 41 + 68) / 136)
+argglobal
+enew
+file __Tag_List__
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=9999
+setlocal fml=0
+setlocal fdn=20
+setlocal fen
+wincmd w
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -154,12 +171,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 69 - ((41 * winheight(0) + 21) / 43)
+let s:l = 28 - ((26 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-69
-normal! 010|
+28
+normal! 05|
 wincmd w
 argglobal
 edit ./sources/gazeta
@@ -188,18 +205,20 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 1 - ((0 * winheight(0) + 12) / 24)
+let s:l = 1 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
 wincmd w
-exe 'vert 1resize ' . ((&columns * 86 + 87) / 174)
-exe '2resize ' . ((&lines * 18 + 22) / 45)
-exe 'vert 2resize ' . ((&columns * 87 + 87) / 174)
-exe '3resize ' . ((&lines * 24 + 22) / 45)
-exe 'vert 3resize ' . ((&columns * 87 + 87) / 174)
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 30 + 68) / 136)
+exe 'vert 2resize ' . ((&columns * 63 + 68) / 136)
+exe '3resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 3resize ' . ((&columns * 41 + 68) / 136)
+exe '4resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 4resize ' . ((&columns * 41 + 68) / 136)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
