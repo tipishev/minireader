@@ -4,7 +4,7 @@
 import logging
 
 from fetchers import Fetcher as DefaultFetcher
-from extractors import VotingExtractor as DefaultExtractor
+from extractors import ParentScoreExtractor as DefaultExtractor
 from combiners import Combiner as DefaultCombiner
 from writers import StdOutWriter as DefaultWriter  # won't write any files
 

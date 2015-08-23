@@ -4,7 +4,7 @@
 from os import makedirs
 from os.path import abspath, dirname, join as join_path
 from codecs import open as copen
-from config import DEFAULT_FILE_ENCODING
+from config import FILE_ENCODING
 
 
 class BaseWriter(object):
@@ -22,7 +22,7 @@ class SimpleWriter(BaseWriter):
     def __init__(self, filename='output.txt'):
         self._filename = filename
 
-    def write(self, long_line, encoding=DEFAULT_FILE_ENCODING):
+    def write(self, long_line, encoding=FILE_ENCODING):
         full_path = abspath(self._filename)
         makedirs(dirname(full_path), exist_ok=True)
         with copen(full_path, 'w', encoding) as f:

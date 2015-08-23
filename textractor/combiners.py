@@ -2,7 +2,7 @@
 '''
 
 from textwrap import fill
-from config import DEFAULT_LINE_WIDTH
+from config import LINE_WIDTH
 
 
 class BaseCombiner(object):
@@ -10,7 +10,7 @@ class BaseCombiner(object):
 
 
 class Combiner(BaseCombiner):
-    def __init__(self, width=DEFAULT_LINE_WIDTH):
+    def __init__(self, width=LINE_WIDTH):
         self._width = width
 
     def combine(self, paragraphs):

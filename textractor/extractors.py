@@ -8,20 +8,20 @@ from utils import unify_spaces, is_not_made_of_links,\
     wrap_links, drop_tags, drop_comments, get_text_length,\
     get_key_with_max_value
 
-from config import DEFAULT_HTML_PARSER
+from config import HTML_PARSER
 
 TRASH_TAGS = ['script', 'style']
 CONTENT_TAGS = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
 
 
 class BaseExtractor(object):
-    def __init__(self, parser=DEFAULT_HTML_PARSER):
+    def __init__(self, parser=HTML_PARSER):
         self._parser = parser
         self._paragraphs = []
 
 
-class VotingExtractor(BaseExtractor):
-    ''' the parent with the most text in its children is the content source '''
+class ParentScoreExtractor(BaseExtractor):
+    ''' the parent with the highest score (most text) is the content source '''
 
     def extract(self, html):
         soup = BeautifulSoup(html, self._parser)
@@ -34,9 +34,7 @@ class VotingExtractor(BaseExtractor):
         for tag in content_tags:
             drop_comments(tag)
             drop_tags(tag, TRASH_TAGS)
-            parent = tag.parent
-            length = get_text_length(tag)
-            scoreboard[parent] += length
+            scoreboard[tag.parent] += get_text_length(tag)
 
         content_parent = get_key_with_max_value(scoreboard)
         content = filter(is_not_made_of_links, content_parent(CONTENT_TAGS))

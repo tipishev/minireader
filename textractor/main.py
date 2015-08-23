@@ -2,7 +2,7 @@
 
 from minireader import MiniReader
 
-from extractors import VotingExtractor
+from extractors import ParentScoreExtractor
 from combiners import Combiner
 from writers import SimpleWriter, UrlWriter
 
@@ -17,7 +17,7 @@ def main():
     WIDTH = 80
 
     mini_reader = MiniReader(
-            extractor=VotingExtractor(),
+            extractor=ParentScoreExtractor(),
             combiner=Combiner(width=WIDTH),
             # writer=SimpleWriter(),
             # writer=UrlWriter(URL),
