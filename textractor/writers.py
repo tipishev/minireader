@@ -11,7 +11,7 @@ class BaseWriter(object):
 
 
 class StdOutWriter(BaseWriter):
-    ''' writes to STDOUT, use for debugging '''
+    ''' writes to STDOUT, useful for debugging '''
     def write(self, long_line):
         print(long_line)
 
@@ -26,6 +26,7 @@ class SimpleWriter(BaseWriter):
         makedirs(dirname(full_path), exist_ok=True)
         with copen(full_path, 'w', encoding) as f:
             f.write(long_line)
+
 
 class UrlWriter(SimpleWriter):
     ''' forms the output file path according to URL '''

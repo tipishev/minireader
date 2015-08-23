@@ -45,6 +45,9 @@ def is_not_made_of_links(tag):
 
 def get_text_length(tag):
     try:
+        # print(tag)
+        # from termcolor import cprint; cprint(len(tag.get_text(strip=True)), 'yellow')
+        # from termcolor import cprint; cprint(hash(tag.parent), 'green')
         return len(tag.get_text(strip=True))
     except AttributeError:
         return 0

@@ -20,5 +20,6 @@ class DummyFetcher(object):
         # with copen('sources/slon', 'r', 'utf8') as f:
         # with copen('sources/lenta', 'r', 'utf8') as f:
         # with copen('sources/slashdot', 'r', 'utf8') as f:
-        with copen('sources/gazeta', 'r', 'cp1251') as f:
+        # with copen('sources/gazeta', 'r', 'cp1251') as f:
+        with copen('sources/1tv', 'r', 'cp1251') as f:
             return f.read()

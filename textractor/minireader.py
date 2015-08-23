@@ -2,7 +2,7 @@
 
 
 from fetchers import Fetcher as DefaultFetcher
-from extractors import Extractor as DefaultExtractor
+from extractors import NaiveExtractor as DefaultExtractor
 from combiners import Combiner as DefaultCombiner
 from writers import StdOutWriter as DefaultWriter
 
