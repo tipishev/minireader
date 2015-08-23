@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+'''Classes for combining a paragraphs iterator to a single printable string.
+'''
 
 from textwrap import fill
 from config import DEFAULT_LINE_WIDTH
