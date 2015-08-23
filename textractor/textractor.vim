@@ -120,7 +120,7 @@ set shortmess=aoO
 badd +1 textractor.py
 badd +2 ./utils.py
 badd +1 ./main.py
-badd +97 ./sources/gazeta
+badd +111 ./sources/gazeta
 badd +1 out.txt
 badd +260 ./sources/slashdot
 badd +3 ./sources/slon
@@ -133,10 +133,7 @@ edit ./main.py
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-2wincmd h
-wincmd w
+1wincmd h
 wincmd w
 wincmd _ | wincmd |
 split
@@ -144,12 +141,11 @@ split
 wincmd w
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 30 + 68) / 136)
-exe 'vert 2resize ' . ((&columns * 63 + 68) / 136)
-exe '3resize ' . ((&lines * 18 + 19) / 39)
-exe 'vert 3resize ' . ((&columns * 41 + 68) / 136)
-exe '4resize ' . ((&lines * 18 + 19) / 39)
-exe 'vert 4resize ' . ((&columns * 41 + 68) / 136)
+exe 'vert 1resize ' . ((&columns * 28 + 68) / 136)
+exe '2resize ' . ((&lines * 36 + 19) / 39)
+exe 'vert 2resize ' . ((&columns * 107 + 68) / 136)
+exe '3resize ' . ((&lines * 0 + 19) / 39)
+exe 'vert 3resize ' . ((&columns * 107 + 68) / 136)
 argglobal
 enew
 file __Tag_List__
@@ -171,15 +167,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 28 - ((26 * winheight(0) + 18) / 37)
+let s:l = 8 - ((7 * winheight(0) + 18) / 36)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-28
-normal! 05|
+8
+normal! 020|
 wincmd w
 argglobal
-edit ./sources/gazeta
+edit ./sources/lenta
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -188,24 +184,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
-let s:l = 111 - ((0 * winheight(0) + 9) / 18)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-111
-normal! 02|
-wincmd w
-argglobal
-edit out.txt
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal nofen
-let s:l = 1 - ((0 * winheight(0) + 9) / 18)
+let s:l = 1 - ((0 * winheight(0) + 0) / 0)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -213,12 +192,11 @@ normal! zt
 normal! 0
 wincmd w
 2wincmd w
-exe 'vert 1resize ' . ((&columns * 30 + 68) / 136)
-exe 'vert 2resize ' . ((&columns * 63 + 68) / 136)
-exe '3resize ' . ((&lines * 18 + 19) / 39)
-exe 'vert 3resize ' . ((&columns * 41 + 68) / 136)
-exe '4resize ' . ((&lines * 18 + 19) / 39)
-exe 'vert 4resize ' . ((&columns * 41 + 68) / 136)
+exe 'vert 1resize ' . ((&columns * 28 + 68) / 136)
+exe '2resize ' . ((&lines * 36 + 19) / 39)
+exe 'vert 2resize ' . ((&columns * 107 + 68) / 136)
+exe '3resize ' . ((&lines * 0 + 19) / 39)
+exe 'vert 3resize ' . ((&columns * 107 + 68) / 136)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

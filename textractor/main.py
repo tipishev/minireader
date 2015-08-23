@@ -3,89 +3,84 @@
 import codecs
 import re
 from bs4 import BeautifulSoup, Comment #, NavigableString, CData, Tag
+from textwrap import fill
+from requests import get
+
+from config import HTML_PARSER, DEFAULT_LINE_WIDTH
+
+from utils import unify_spaces,\
+                  is_link, is_not_made_of_links,\
+                  find_the_textiest_tag,\
+                  wrap_links, drop_tags, drop_comments, drop_empty
 
 TRASH_TAGS = ['script', 'style']
 INFORMATIVE_TAGS = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
-PARSER = 'html5lib'
+
+class HtmlFetcher(object):
+    # def fetch(url):
+    #     return get(url).text
+
+    def fetch(self, url=None):
+        with codecs.open('sources/gazeta', 'r', 'cp1251') as f:
+        # with codecs.open('sources/slon', 'r', 'utf8') as f:
+        # with codecs.open('sources/lenta', 'r', 'utf8') as f:
+        # with codecs.open('sources/slashdot', 'r', 'utf8') as f:
+            return f.read()
+
+class TextExtractor(object):
+    def extract(self, html):
+        paragraphs = []
+        soup = BeautifulSoup(html, HTML_PARSER)
+        content_candidates = soup(INFORMATIVE_TAGS)
+        for c in content_candidates:
+            c = drop_comments(c)
+            c = drop_tags(c, TRASH_TAGS)
+
+        textiest = find_the_textiest_tag(content_candidates)
+        content_parent = textiest.parent
+        content = filter(is_not_made_of_links, content_parent(INFORMATIVE_TAGS))
+        for tag in content:
+            tag = wrap_links(tag)
+            paragraphs.append(unify_spaces(tag.get_text()))
+        return paragraphs
+
+class TextFormatter(object):
+    def __init__(self, width=DEFAULT_LINE_WIDTH):
+        self._width = width
+
+    def combine(self, paragraphs):
+        paragraphs = [fill(paragraph, self._width) for paragraph in paragraphs]
+        return '\n\n'.join(paragraphs)
 
 
-def is_link(tag):
-    return tag.name == 'a'
+class FileWriter(object):
+    def write(self, long_line):
+        print(long_line)
 
-# should go to utils
-def unify_spaces(string):
-    suffix = re.compile(r"\s+", re.UNICODE)
-    return suffix.sub(r" ", string)
+class MiniReader(object):
+    def __init__(self, html_fetcher=None,
+                       text_extractor=None,
+                       text_formatter=None,
+                       file_writer=None):
+        self._html_fetcher = html_fetcher or HtmlFetcher()
+        self._text_extractor = text_extractor or TextExtractor()
+        self._text_formatter = text_formatter or TextFormatter()
+        self._file_writer = file_writer or  FileWriter()
 
-# # soup functions
-def drop_tags(soup, tags_to_drop):
-    for subtree in soup.find_all(tags_to_drop):
-        for tag in subtree:
-            tag.extract()
-    return soup
+    def read(self, url):
+        self._url = url
+        html = self._html_fetcher.fetch(self._url)
+        paragraphs = self._text_extractor.extract(html)
+        formatted = self._text_formatter.combine(paragraphs)
+        self._file_writer.write(formatted)
 
-def drop_comments(soup):
-    for comment in soup.find_all(text=lambda text: isinstance(text, Comment)):
-        comment.extract()
-    return soup
-
-# def keep_tags(soup, tags_to_keep):
-#     return soup.find_all(tags_to_keep)
-
-# tag list functions
-def drop_attributes(tags):
-    for tag in tags:
-            tag.attrs = {}
-    return tags
-
-def drop_empty(soup):
-    empty_tags = soup.find_all(lambda tag: not tag.contents
-                                  and (tag.string is None or not tag.string.strip()))
-    [empty_tag.extract() for empty_tag in empty_tags]
-    return soup
-
-# getting the data
-def get_raw_html():
-    with codecs.open('sources/gazeta', 'r', 'cp1251') as f:
-    # with codecs.open('sources/slon', 'r', 'utf8') as f:
-    # with codecs.open('sources/lenta', 'r', 'utf8') as f:
-    # with codecs.open('sources/slashdot', 'r', 'utf8') as f:
-        return f.read()
-
-def count_text_length(tag):
-    return sum([len(string) for string in tag.stripped_strings])
-
-def find_the_textiest_tag(tags):
-    return max(tags, key=count_text_length)
-
-def not_only_links(tag):
-    return not all([is_link(child) for child in tag.contents])
-
-def wrap_links(tag):
-    for child in tag.contents:
-        if is_link(child):
-            from termcolor import cprint; cprint(child.attrs, 'green')
-            child.string = "{} [{}]".format(child.string, child.get('href'))
-
-
-def extract_text(raw_html):
-    soup = BeautifulSoup(raw_html, PARSER)
-    # title = soup.title  # ok, that was easy
-    soup = drop_tags(soup, TRASH_TAGS)
-    # soup = drop_comments(soup)
-    textiest = max(soup(INFORMATIVE_TAGS), key=count_text_length)
-    content_parent = textiest.parent
-    content = filter(not_only_links, content_parent(INFORMATIVE_TAGS))
-    for tag in content:
-        wrap_links(tag)
-        from termcolor import cprint; cprint(tag, 'yellow')
-        print(unify_spaces(tag.get_text()))  # strip messes up spaces before links
 
 def main():
-    raw = get_raw_html()
-    text = extract_text(raw)
-    # with open('out.txt', 'w') as f:
-    #     f.write(text)
+    URL = 'http://www.gazeta.ru/politics/2015/08/22_a_7711805.shtml'
+    mini_reader = MiniReader(
+            text_formatter=TextFormatter(width=80),
+    )
+    mini_reader.read('ololo')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
