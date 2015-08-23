@@ -1,16 +1,17 @@
-'''Classes for converting raw html to content (i.e. headers and paragraphs)
+'''Extract content, namely headers and paragraphs from raw HTML
 '''
 
 from bs4 import BeautifulSoup
-from operator import itemgetter
+from collections import defaultdict
 
 from utils import unify_spaces, is_not_made_of_links,\
-    wrap_links, drop_tags, drop_comments, get_text_length
+    wrap_links, drop_tags, drop_comments, get_text_length,\
+    get_key_with_max_value
 
 from config import DEFAULT_HTML_PARSER
 
 TRASH_TAGS = ['script', 'style']
-INFORMATIVE_TAGS = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
+CONTENT_TAGS = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
 
 
 class BaseExtractor(object):
@@ -28,24 +29,19 @@ class VotingExtractor(BaseExtractor):
         if soup.title:
             self._paragraphs.append(soup.title.get_text(strip=True))
 
-        content_candidates = soup(INFORMATIVE_TAGS)
-        for candidate in content_candidates:
-            candidate = drop_comments(candidate)
-            candidate = drop_tags(candidate, TRASH_TAGS)
+        scoreboard = defaultdict(int)
+        content_tags = soup(CONTENT_TAGS)
+        for tag in content_tags:
+            drop_comments(tag)
+            drop_tags(tag, TRASH_TAGS)
+            parent = tag.parent
+            length = get_text_length(tag)
+            scoreboard[parent] += length
 
-        score = dict()
-
-        for candidate in content_candidates:
-            parent = candidate.parent
-            if parent in score:
-                score[parent] += get_text_length(candidate)
-            else:
-                score[parent] = get_text_length(candidate)
-
-        content_parent = max(score.items(), key=itemgetter(1))[0]
-        content = filter(is_not_made_of_links,
-                         content_parent(INFORMATIVE_TAGS))
+        content_parent = get_key_with_max_value(scoreboard)
+        content = filter(is_not_made_of_links, content_parent(CONTENT_TAGS))
         for tag in content:
-            tag = wrap_links(tag)
-            self._paragraphs.append(unify_spaces(tag.get_text()))
+            wrap_links(tag)
+            text = unify_spaces(tag.get_text())
+            self._paragraphs.append(text)
         return self._paragraphs

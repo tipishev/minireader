@@ -1,11 +1,11 @@
-'''Classes for combining a paragraphs iterator to a single printable string.
+'''Combine a paragraphs iterator to a single printable string
 '''
 
 from textwrap import fill
 from config import DEFAULT_LINE_WIDTH
 
 
-class BaseCombiner():
+class BaseCombiner(object):
     pass
 
 

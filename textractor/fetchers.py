@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+'''Get raw HTML
+'''
 
-from codecs import open as copen
 from requests import get
 
 
@@ -8,18 +8,7 @@ class BaseFetcher(object):
     pass
 
 
-class Fetcher(object):
+class Fetcher(BaseFetcher):
 
     def fetch(self, url=None):
         return get(url).text
-
-
-class DummyFetcher(object):
-    ''' can be used for testing '''
-    def fetch(self, url=None):
-        # with copen('sources/slon', 'r', 'utf8') as f:
-        # with copen('sources/lenta', 'r', 'utf8') as f:
-        # with copen('sources/slashdot', 'r', 'utf8') as f:
-        # with copen('sources/gazeta', 'r', 'cp1251') as f:
-        with copen('sources/1tv', 'r', 'cp1251') as f:
-            return f.read()

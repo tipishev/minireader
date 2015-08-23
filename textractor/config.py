@@ -1,4 +1,4 @@
-'''Global configuration, for now just constants with default values.
+'''Global configuration, for now just constants with default values
 '''
 
 DEFAULT_HTML_PARSER = 'lxml'  # choose from {'lxml', 'html5lib', 'html.parser'}

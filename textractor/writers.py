@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+'''Writers handle the formatted string
+'''
 
 from os import makedirs
 from os.path import abspath, dirname, join as join_path
@@ -29,7 +30,7 @@ class SimpleWriter(BaseWriter):
 
 
 class UrlWriter(SimpleWriter):
-    ''' forms the output file path according to URL '''
+    ''' creates the output file path according to URL '''
     @staticmethod
     def _url_to_filename(url):
         assert url.startswith(('http://', 'https://')),\

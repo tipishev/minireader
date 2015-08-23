@@ -1,29 +1,35 @@
-#!/usr/bin/env python3
+'''Various low-level helpers
+'''
 
 from bs4 import Comment
+from operator import itemgetter
 import re
+import logging
 
 
-# String formatting
+# Dict helpers
+def get_key_with_max_value(scoreboard):
+    return max(scoreboard.items(), key=itemgetter(1))[0]
+
+
+# String helpers
 def unify_spaces(string):
     suffix = re.compile(r"\s+", re.UNICODE)
     return suffix.sub(r" ", string)
 
 
-# BeautifulSoup helpers
+# Soup helpers
 def drop_tags(soup, tags_to_drop):
     try:
         for tag in soup.find_all(tags_to_drop):
             tag.extract()
-    except Exception:
-        pass
-    return soup
+    except Exception as e:
+        logging.warning('Exception while dropping tags: %s', e)
 
 
 def drop_comments(soup):
     for comment in soup.find_all(text=lambda text: isinstance(text, Comment)):
         comment.extract()
-    return soup
 
 
 def drop_empty(soup):
@@ -34,7 +40,7 @@ def drop_empty(soup):
     return soup
 
 
-# tags stuff
+# Tag helpers
 def is_link(tag):
     return tag.name == 'a'
 
@@ -45,16 +51,9 @@ def is_not_made_of_links(tag):
 
 def get_text_length(tag):
     try:
-        # print(tag)
-        # from termcolor import cprint; cprint(len(tag.get_text(strip=True)), 'yellow')
-        # from termcolor import cprint; cprint(hash(tag.parent), 'green')
         return len(tag.get_text(strip=True))
     except AttributeError:
         return 0
-
-
-def find_the_textiest_tag(tags):
-    return max(tags, key=get_text_length)
 
 
 def wrap_links(tag):
@@ -63,4 +62,3 @@ def wrap_links(tag):
             text = str(child.string or '')
             href = child.get('href')
             child.string = "%s [%s]" % (text, href) if text else "[%s]" % href
-    return tag
